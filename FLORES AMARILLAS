@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Berry 💛</title>
+    <style>
+
+        :root {
+            --bg-color: #f7f3eb;
+            --card-bg: #fffdf9;
+            --text-color: #3a332a;
+            --accent-yellow: #ebb800;
+            --border-color: #8c7b60;
+            --font-family: 'Courier New', Courier, monospace, Georgia, serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            background-color: var(--card-bg);
+            padding: 30px;
+            box-shadow: 4px 4px 0px var(--border-color);
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #4a3e2a;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 10px;
+        }
+
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 2px solid var(--border-color);
+            padding: 12px 20px;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 0px var(--border-color);
+            transition: all 0.1s ease;
+        }
+
+        button:hover {
+            background-color: var(--accent-yellow);
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0px var(--border-color);
+        }
+
+        button:active {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0px var(--border-color);
+        }
+
+    
+        .content-section {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #dcd3c1;
+            background-color: #fff;
+            text-align: left;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+   
+        .letter-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            white-space: pre-line;
+            color: #2b251e;
+        }
+
+        .bouquet-container {
+            text-align: center;
+        }
+
+        svg {
+            max-width: 320px;
+            height: auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💛 Con amor para mi Pre Pre Pre 💛</h1>
+
+        <div class="btn-group">
+            <button onclick="showSection('flores')">🌻 Ver Flores Amarillas</button>
+            <button onclick="showSection('carta')">✉️ Leer Carta</button>
+        </div>
+
+
+        <div id="flores" class="content-section">
+            <div class="bouquet-container">
+                <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M120,360 L150,220 L180,360 Z" fill="#8c7b60" opacity="0.3"/>
+                    <path d="M100,240 L150,370 L200,240 Z" fill="#e6d5b8" stroke="#8c7b60" stroke-width="2"/>
+                    <path d="M150,240 L150,370" stroke="#8c7b60" stroke-width="1.5" stroke-dasharray="3,3"/>
+                    <polygon points="135,280 165,280 150,295" fill="#c49a45"/>
+
+                    <path d="M150,240 Q110,180 100,120" stroke="#4a6b35" stroke-width="4" fill="none"/>
+                    <path d="M150,240 Q130,170 130,100" stroke="#4a6b35" stroke-width="4" fill="none"/>
+                    <path d="M150,240 Q150,160 150,80" stroke="#4a6b35" stroke-width="4" fill="none"/>
+                    <path d="M150,240 Q170,170 170,100" stroke="#4a6b35" stroke-width="4" fill="none"/>
+                    <path d="M150,240 Q190,180 200,120" stroke="#4a6b35" stroke-width="4" fill="none"/>
+
+                    <path d="M125,200 Q90,190 105,160 Q125,180 125,200" fill="#5c8244" stroke="#385228"/>
+                    <path d="M175,200 Q210,190 195,160 Q175,180 175,200" fill="#5c8244" stroke="#385228"/>
+
+                    <g transform="translate(100,110)">
+                        <path d="M-20,10 C-25,-15 0,-30 0,-30 C0,-30 25,-15 20,10 C10,25 -10,25 -20,10 Z" fill="#ffd700" stroke="#d49b00" stroke-width="1.5"/>
+                        <path d="M-15,5 C-10,-15 0,-25 0,-25 C0,-25 10,-15 15,5" fill="#ffea64" stroke="#d49b00" stroke-width="1"/>
+                        <path d="M-8,10 C-5,-5 0,-28 0,-28 C0,-28 5,-5 8,10" fill="#fff194"/>
+                    </g>
+
+                    <g transform="translate(200,110)">
+                        <path d="M-20,10 C-25,-15 0,-30 0,-30 C0,-30 25,-15 20,10 C10,25 -10,25 -20,10 Z" fill="#ffd700" stroke="#d49b00" stroke-width="1.5"/>
+                        <path d="M-15,5 C-10,-15 0,-25 0,-25 C0,-25 10,-15 15,5" fill="#ffea64" stroke="#d49b00" stroke-width="1"/>
+                        <path d="M-8,10 C-5,-5 0,-28 0,-28 C0,-28 5,-5 8,10" fill="#fff194"/>
+                    </g>
+
+                    <g transform="translate(130,90)">
+                        <circle cx="0" cy="0" r="22" fill="#ffd700" stroke="#c99100" stroke-width="1.5"/>
+                        <path d="M-12,-5 C-5,-18 8,-18 12,-5 C15,10 -15,15 -12,-5 Z" fill="#ffeb60" stroke="#c99100" stroke-width="1"/>
+                        <path d="M-6,-2 C-2,-10 4,-10 6,-2 C8,5 -8,8 -6,-2 Z" fill="#fff3a1" stroke="#c99100" stroke-width="1"/>
+                    </g>
+
+                    <g transform="translate(150,70)">
+                        <circle cx="0" cy="0" r="25" fill="#ffae00" stroke="#b87b00" stroke-width="1.5"/>
+                        <circle cx="0" cy="0" r="20" fill="#ffd700"/>
+                        <path d="M-15,-5 C-6,-20 10,-20 15,-5 C18,12 -18,18 -15,-5 Z" fill="#ffea64" stroke="#b87b00" stroke-width="1"/>
+                        <path d="M-8,-2 C-3,-12 5,-12 8,-2 C10,7 -10,10 -8,-2 Z" fill="#fff3a1" stroke="#b87b00" stroke-width="1"/>
+                    </g>
+
+                    <g transform="translate(170,90)">
+                        <circle cx="0" cy="0" r="22" fill="#ffd700" stroke="#c99100" stroke-width="1.5"/>
+                        <path d="M-12,-5 C-5,-18 8,-18 12,-5 C15,10 -15,15 -12,-5 Z" fill="#ffeb60" stroke="#c99100" stroke-width="1"/>
+                        <path d="M-6,-2 C-2,-10 4,-10 6,-2 C8,5 -8,8 -6,-2 Z" fill="#fff3a1" stroke="#c99100" stroke-width="1"/>
+                    </g>
+                </svg>
+            </div>
+            <p style="text-align: center; font-style: italic; margin-top: 15px; color: #665743;">
+                Te amo mi amor 💐
+            </p>
+        </div>
+
+        <div id="carta" class="content-section">
+            <p class="letter-text">Amor, este detalle fue hecho con mucho amor, me llevo un buen de tiempo pero es con todo el amor del mundo, te amo mucho. No podia quedarme atras con tus flores amarillas, quiza un poco diferente al convencional pero con hecho con mucho amor. te amo mi vida.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
